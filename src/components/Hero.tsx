@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowDown, Phone, MapPin } from "lucide-react";
+import { ArrowDown, Phone, MapPin, MessageCircle } from "lucide-react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -80,7 +80,17 @@ export default function Hero() {
         >
           <a href="tel:0936789363" className="btn-primary" id="hero-phone-cta">
             <Phone size={16} />
-            Gọi Ngay Báo Giá
+            Gọi Ngay
+          </a>
+          <a
+            href="https://zalo.me/0936789363"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline"
+            id="hero-zalo-cta"
+          >
+            <MessageCircle size={16} />
+            Nhắn Zalo
           </a>
           <button onClick={scrollToAbout} className="btn-outline" id="hero-explore-btn">
             Khám Phá
