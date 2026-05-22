@@ -1,0 +1,80 @@
+.wrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.625rem;
+}
+
+.mainBtn {
+  width: 52px;
+  height: 52px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(200, 169, 110, 0.45);
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mainBtn:hover {
+  background: var(--color-accent-light);
+  box-shadow: 0 6px 28px rgba(200, 169, 110, 0.55);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.125rem;
+  min-height: 44px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-hover);
+  border-radius: 100px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  box-shadow: var(--shadow-md);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.option:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.optionZalo {
+  color: var(--color-accent);
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 480px) {
+  .wrapper {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+
+  .mainBtn {
+    width: 48px;
+    height: 48px;
+  }
+}
