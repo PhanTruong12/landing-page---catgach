@@ -128,7 +128,7 @@ export default function Contact() {
             <div className={styles.mapFrame}>
               <iframe
                 title="Bản đồ xưởng cắt gạch Trần Nam Trung"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.0419!2d108.228!3d15.9817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142119a7e1a15f5%3A0x1!2zVHLhuqduIE5hbSBUcnVuZywgSMOyYSBYdcOibg!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn"
+                src="https://maps.google.com/maps?q=5%20Tran%20Nam%20Trung%2C%20Hoa%20Xuan%2C%20Da%20Nang&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

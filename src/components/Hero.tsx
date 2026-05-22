@@ -56,9 +56,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
         >
-          Xưởng Cắt Gạch
-          <br />
-          <em>Trần Nam Trung</em>
+          <span className={styles.titleLine}>Xưởng Cắt Gạch</span>
+          <span className={styles.titleLine}>
+            <em>Trần Nam Trung</em>
+          </span>
         </motion.h1>
 
         <motion.p

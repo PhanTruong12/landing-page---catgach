@@ -13,9 +13,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Services />
+        <div className="section-divider" />
         <Gallery />
+        <div className="section-divider" />
+        <About />
+        <div className="section-divider" />
+        <Services />
+        <div className="section-divider" />
         <Contact />
       </main>
       <Footer />
