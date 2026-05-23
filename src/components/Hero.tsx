@@ -79,12 +79,12 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.65 }}
         >
-          <a href="tel:0936789363" className="btn-primary" id="hero-phone-cta">
+          <a href="tel:0704599599" className="btn-primary" id="hero-phone-cta">
             <Phone size={16} />
             Gọi Ngay
           </a>
           <a
-            href="https://zalo.me/0936789363"
+            href="https://zalo.me/0704599599"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"
@@ -112,7 +112,7 @@ export default function Hero() {
           <div className={styles.infoSep} />
           <div className={styles.infoItem}>
             <Phone size={14} className={styles.infoIcon} />
-            <a href="tel:0936789363">0936 789 363</a>
+            <a href="tel:0704599599">0704 599 599</a>
           </div>
         </motion.div>
       </div>

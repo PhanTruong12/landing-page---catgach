@@ -10,8 +10,8 @@ const contactItems = [
   {
     icon: Phone,
     label: "Điện Thoại",
-    value: "0936 789 363",
-    href: "tel:0936789363",
+    value: "0704 599 599",
+    href: "tel:0704599599",
     id: "contact-phone-link",
   },
   {
@@ -31,8 +31,8 @@ const contactItems = [
   {
     icon: MessageCircle,
     label: "Zalo",
-    value: "0936 789 363 (Zalo)",
-    href: "https://zalo.me/0936789363",
+    value: "0704 599 599 (Zalo)",
+    href: "https://zalo.me/0704599599",
     id: "contact-zalo-link",
   },
 ];
@@ -101,12 +101,12 @@ export default function Contact() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.7 }}
             >
-              <a href="tel:0936789363" className="btn-primary" id="contact-call-cta">
+              <a href="tel:0704599599" className="btn-primary" id="contact-call-cta">
                 <Phone size={16} />
                 Gọi Ngay
               </a>
               <a
-                href="https://zalo.me/0936789363"
+                href="https://zalo.me/0704599599"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"

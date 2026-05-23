@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Xưởng Cắt Gạch Trần Nam Trung | Chuyên Cắt Gạch Tại Đà Nẵng",
   description:
-    "Xưởng Cắt Gạch Trần Nam Trung chuyên cung cấp dịch vụ cắt gạch chuyên nghiệp, chính xác tại Đà Nẵng. Địa chỉ: 5 Trần Nam Trung, Phường Hòa Xuân. Hotline: 0936789363.",
+    "Xưởng Cắt Gạch Trần Nam Trung chuyên cung cấp dịch vụ cắt gạch chuyên nghiệp, chính xác tại Đà Nẵng. Địa chỉ: 5 Trần Nam Trung, Phường Hòa Xuân. Hotline: 0704599599.",
   keywords: ["cắt gạch", "gạch đá", "Đà Nẵng", "Trần Nam Trung", "Hòa Xuân", "xưởng cắt gạch"],
   authors: [{ name: "Xưởng Cắt Gạch Trần Nam Trung" }],
   openGraph: {

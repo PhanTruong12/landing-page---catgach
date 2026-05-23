@@ -33,12 +33,12 @@ export default function FloatingCTA() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
               >
-                <a href="tel:0936789363" className={styles.option} id="float-cta-phone">
+                <a href="tel:0704599599" className={styles.option} id="float-cta-phone">
                   <Phone size={16} />
                   <span>Gọi Điện</span>
                 </a>
                 <a
-                  href="https://zalo.me/0936789363"
+                  href="https://zalo.me/0704599599"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${styles.option} ${styles.optionZalo}`}

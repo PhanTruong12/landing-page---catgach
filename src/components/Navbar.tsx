@@ -58,9 +58,9 @@ export default function Navbar() {
           </nav>
 
           <div className={styles.navActions}>
-            <a href="tel:0936789363" className={`btn-primary ${styles.phoneBtn}`} id="navbar-phone-cta">
+            <a href="tel:0704599599" className={`btn-primary ${styles.phoneBtn}`} id="navbar-phone-cta">
               <Phone size={14} />
-              <span>0936 789 363</span>
+              <span>0704 599 599</span>
             </a>
             <button
               className={styles.menuBtn}
@@ -95,9 +95,9 @@ export default function Navbar() {
                 {link.label}
               </motion.button>
             ))}
-            <a href="tel:0936789363" className={`btn-primary ${styles.mobilePhoneBtn}`}>
+            <a href="tel:0704599599" className={`btn-primary ${styles.mobilePhoneBtn}`}>
               <Phone size={14} />
-              Gọi Ngay: 0936 789 363
+              Gọi Ngay: 0704 599 599
             </a>
           </motion.div>
         )}

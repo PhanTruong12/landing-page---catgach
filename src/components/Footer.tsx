@@ -46,18 +46,18 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Liên Hệ</h4>
             <div className={styles.contactLinks}>
-              <a href="tel:0936789363" className={styles.contactLink}>
+              <a href="tel:0704599599" className={styles.contactLink}>
                 <Phone size={13} />
-                0936 789 363
+                0704 599 599
               </a>
               <a
-                href="https://zalo.me/0936789363"
+                href="https://zalo.me/0704599599"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactLink}
               >
                 <MessageCircle size={13} />
-                Zalo: 0936 789 363
+                Zalo: 0704 599 599
               </a>
               <a
                 href="https://maps.google.com/?q=5+Tran+Nam+Trung,+Hoa+Xuan,+Da+Nang"
