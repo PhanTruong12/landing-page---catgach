@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
 
@@ -13,14 +12,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
@@ -30,12 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.header
-        className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
-        initial={{ y: -80 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      >
+      <header className={styles.navbar}>
         <div className={`container ${styles.inner}`}>
           <a href="#" className={styles.logo}>
             <span className={styles.logoMark}>TN</span>
@@ -72,36 +59,25 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-      </motion.header>
+      </header>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            className={styles.mobileMenu}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.25 }}
-          >
-            {navLinks.map((link, i) => (
-              <motion.button
-                key={link.href}
-                className={styles.mobileLink}
-                onClick={() => handleNavClick(link.href)}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.07 }}
-              >
-                {link.label}
-              </motion.button>
-            ))}
-            <a href="tel:0704599599" className={`btn-primary ${styles.mobilePhoneBtn}`}>
-              <Phone size={14} />
-              Gọi Ngay: 0704 599 599
-            </a>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {mobileOpen && (
+        <div className={styles.mobileMenu}>
+          {navLinks.map((link) => (
+            <button
+              key={link.href}
+              className={styles.mobileLink}
+              onClick={() => handleNavClick(link.href)}
+            >
+              {link.label}
+            </button>
+          ))}
+          <a href="tel:0704599599" className={`btn-primary ${styles.mobilePhoneBtn}`}>
+            <Phone size={14} />
+            Gọi Ngay: 0704 599 599
+          </a>
+        </div>
+      )}
     </>
   );
 }

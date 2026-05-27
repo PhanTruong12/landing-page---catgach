@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
@@ -45,13 +44,7 @@ export default function Contact() {
     <section className={`section ${styles.section}`} id="contact" ref={ref}>
       <div className="container">
         <div className={styles.layout}>
-          {/* Left side */}
-          <motion.div
-            className={styles.left}
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7 }}
-          >
+          <div className={styles.left}>
             <p className="section-label">Liên Hệ</p>
             <h2 className="section-title">
               Liên Hệ
@@ -64,13 +57,10 @@ export default function Contact() {
             </p>
 
             <div className={styles.contactList}>
-              {contactItems.map((item, i) => (
-                <motion.div
+              {contactItems.map((item) => (
+                <div
                   key={item.label}
                   className={styles.contactItem}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                 >
                   <div className={styles.contactIcon}>
                     <item.icon size={16} />
@@ -91,16 +81,11 @@ export default function Contact() {
                       <span className={styles.contactValue}>{item.value}</span>
                     )}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
-            <motion.div
-              className={styles.ctaGroup}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.7 }}
-            >
+            <div className={styles.ctaGroup}>
               <a href="tel:0704599599" className="btn-primary" id="contact-call-cta">
                 <Phone size={16} />
                 Gọi Ngay
@@ -115,16 +100,10 @@ export default function Contact() {
                 <MessageCircle size={16} />
                 Nhắn Zalo
               </a>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          {/* Right side – Map */}
-          <motion.div
-            className={styles.mapWrapper}
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.15 }}
-          >
+          <div className={styles.mapWrapper}>
             <div className={styles.mapFrame}>
               <iframe
                 title="Bản đồ xưởng cắt gạch Trần Nam Trung"
@@ -147,7 +126,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

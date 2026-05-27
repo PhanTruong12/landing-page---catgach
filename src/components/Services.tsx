@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Ruler, Gem, Zap, ShieldCheck, Layers, Wrench } from "lucide-react";
@@ -52,23 +51,18 @@ export default function Services() {
   return (
     <section className={`section ${styles.section}`} id="services" ref={ref}>
       <div className="container">
-        <motion.div
-          className={styles.header}
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
+        <div className={styles.header}>
           <p className="section-label">Dịch Vụ</p>
           <h2 className="section-title">Những Gì Chúng Tôi Cung Cấp</h2>
           <p className="section-subtitle">
             Đa dạng dịch vụ cắt gạch đá chuyên nghiệp, phục vụ cả công trình dân dụng
             và thương mại tại Đà Nẵng và các vùng lân cận.
           </p>
-        </motion.div>
+        </div>
 
         <div className={styles.grid}>
-          {services.map((service, i) => (
-            <ServiceCard key={service.title} {...service} index={i} inView={inView} />
+          {services.map((service) => (
+            <ServiceCard key={service.title} {...service} />
           ))}
         </div>
       </div>
@@ -80,28 +74,18 @@ function ServiceCard({
   icon: Icon,
   title,
   description,
-  index,
-  inView,
 }: {
   icon: React.ElementType;
   title: string;
   description: string;
-  index: number;
-  inView: boolean;
 }) {
   return (
-    <motion.article
-      className={styles.card}
-      initial={{ opacity: 0, y: 40 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: 0.1 + index * 0.08 }}
-    >
+    <article className={styles.card}>
       <div className={styles.cardIcon}>
         <Icon size={20} />
       </div>
       <h3 className={styles.cardTitle}>{title}</h3>
       <p className={styles.cardDesc}>{description}</p>
-      <div className={styles.cardDecor} aria-hidden="true" />
-    </motion.article>
+    </article>
   );
 }

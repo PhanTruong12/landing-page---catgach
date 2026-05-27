@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowDown, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Phone, MapPin, MessageCircle } from "lucide-react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -12,7 +11,6 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} id="hero">
-      {/* Background Image */}
       <div className={styles.bgWrapper}>
         <Image
           src="/tile_hero.png"
@@ -23,62 +21,27 @@ export default function Hero() {
           sizes="100vw"
         />
         <div className={styles.overlay} />
-        <div className={styles.gradientBottom} />
-      </div>
-
-      {/* Animated grid lines */}
-      <div className={styles.gridLines} aria-hidden="true">
-        {[...Array(5)].map((_, i) => (
-          <motion.div
-            key={i}
-            className={styles.gridLine}
-            initial={{ scaleY: 0 }}
-            animate={{ scaleY: 1 }}
-            transition={{ duration: 1.2, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
-          />
-        ))}
       </div>
 
       <div className={`container ${styles.content}`}>
-        <motion.div
-          className={styles.badge}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <span className={styles.badgeDot} />
+        <div className={styles.badge}>
           Đà Nẵng · Hòa Xuân
-        </motion.div>
+        </div>
 
-        <motion.h1
-          className={styles.title}
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        >
+        <h1 className={styles.title}>
           <span className={styles.titleLine}>Xưởng Cắt Gạch</span>
           <span className={styles.titleLine}>
             <em>Trần Nam Trung</em>
           </span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          className={styles.subtitle}
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-        >
+        <p className={styles.subtitle}>
           Cắt gạch, gia công và giao nhận tại Đà Nẵng.
           <br />
           Tối giản, rõ ràng và dễ dàng theo dõi.
-        </motion.p>
+        </p>
 
-        <motion.div
-          className={styles.actions}
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.65 }}
-        >
+        <div className={styles.actions}>
           <a href="tel:0704599599" className="btn-primary" id="hero-phone-cta">
             <Phone size={16} />
             Gọi Ngay
@@ -95,16 +58,10 @@ export default function Hero() {
           </a>
           <button onClick={scrollToAbout} className="btn-outline" id="hero-explore-btn">
             Khám Phá
-            <ArrowDown size={14} />
           </button>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className={styles.infoStrip}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-        >
+        <div className={styles.infoStrip}>
           <div className={styles.infoItem}>
             <MapPin size={14} className={styles.infoIcon} />
             <span>5 Trần Nam Trung, Phường Hòa Xuân, Đà Nẵng</span>
@@ -114,24 +71,8 @@ export default function Hero() {
             <Phone size={14} className={styles.infoIcon} />
             <a href="tel:0704599599">0704 599 599</a>
           </div>
-        </motion.div>
+        </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.button
-        className={styles.scrollIndicator}
-        onClick={scrollToAbout}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}
-        aria-label="Cuộn xuống"
-      >
-        <motion.div
-          className={styles.scrollDot}
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
-        />
-      </motion.button>
     </section>
   );
 }

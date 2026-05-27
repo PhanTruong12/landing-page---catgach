@@ -10,7 +10,6 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.top}>
-          {/* Brand */}
           <div className={styles.brand}>
             <div className={styles.logoMark}>TN</div>
             <div>
@@ -19,7 +18,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick links */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Điều Hướng</h4>
             <nav className={styles.colLinks}>
@@ -42,7 +40,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Contact */}
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Liên Hệ</h4>
             <div className={styles.contactLinks}>
