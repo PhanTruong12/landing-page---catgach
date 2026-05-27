@@ -67,6 +67,12 @@ export default function Gallery() {
           </p>
         </motion.div>
 
+        <div className={styles.preloadGallery} aria-hidden="true">
+          <Image src="/tile_gallery1.png" alt="" width={1} height={1} />
+          <Image src="/tile_gallery2.png" alt="" width={1} height={1} />
+          <Image src="/tile_gallery3.png" alt="" width={1} height={1} />
+        </div>
+
         {/* Masonry-style gallery */}
         <div className={styles.gallery}>
           {galleryItems.map((item, i) => (

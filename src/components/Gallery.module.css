@@ -3,6 +3,10 @@
   max-width: 640px;
 }
 
+.preloadGallery {
+  display: none;
+}
+
 /* ─── Masonry Gallery Grid ─── */
 .gallery {
   display: grid;
