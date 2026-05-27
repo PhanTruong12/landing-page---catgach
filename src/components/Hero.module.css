@@ -28,9 +28,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(250, 247, 239, 0.65) 0%,
-    rgba(250, 247, 239, 0.5) 55%,
-    rgba(250, 247, 239, 0.65) 100%
+    rgba(250, 247, 242, 0.72) 0%,
+    rgba(250, 247, 242, 0.55) 55%,
+    rgba(250, 247, 242, 0.7) 100%
   );
 }
 
@@ -70,16 +70,17 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.35rem 0.875rem;
-  background: rgba(200, 169, 110, 0.1);
-  border: 1px solid rgba(200, 169, 110, 0.25);
+  padding: 0.4rem 1rem;
+  background: var(--color-accent-glow);
+  border: 1.5px solid var(--color-accent);
   border-radius: 100px;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: 1.5rem;
+  transition: all var(--transition-base);
 }
 
 .badgeDot {

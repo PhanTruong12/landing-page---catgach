@@ -11,11 +11,12 @@
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom-color: var(--color-border);
-  padding: 0.875rem 0;
+  padding: 0.75rem 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .inner {
@@ -35,19 +36,24 @@
 }
 
 .logoMark {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   background: var(--color-accent);
-  color: var(--color-bg);
+  color: #ffffff;
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
   flex-shrink: 0;
   letter-spacing: 0.02em;
+  transition: transform var(--transition-base);
+}
+
+.logo:hover .logoMark {
+  transform: scale(1.05);
 }
 
 .logoText {
@@ -85,19 +91,19 @@
   border: none;
   cursor: pointer;
   font-family: var(--font-sans);
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 500;
   letter-spacing: 0;
   color: var(--color-text-secondary);
-  padding: 0.5rem 0.75rem;
-  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-lg);
   transition: color var(--transition-fast), background var(--transition-fast);
   -webkit-tap-highlight-color: transparent;
 }
 
 .navLink:hover {
-  color: var(--color-text-primary);
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-accent);
+  background: var(--color-accent-glow);
 }
 
 /* Right side actions */
@@ -118,14 +124,14 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid var(--color-border-hover);
+  border: 1.5px solid var(--color-border-hover);
   color: var(--color-text-primary);
   cursor: pointer;
-  padding: 0.45rem;
-  border-radius: var(--radius-sm);
-  width: 38px;
-  height: 38px;
-  transition: border-color var(--transition-fast), background var(--transition-fast);
+  padding: 0.4rem;
+  border-radius: var(--radius-lg);
+  width: 40px;
+  height: 40px;
+  transition: border-color var(--transition-base), background var(--transition-base);
   -webkit-tap-highlight-color: transparent;
 }
 
