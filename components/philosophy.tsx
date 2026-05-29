@@ -62,9 +62,16 @@ export function Philosophy() {
               Về <HighlightedText>chúng tôi</HighlightedText>
             </h2>
 
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-4">
               Xưởng chuyên gia công gạch đá tại Đà Nẵng với quy trình rõ ràng từ nhận đơn, gia công, đóng gói đến giao
               hàng công trình.
+            </p>
+            <p className="text-foreground text-xl md:text-2xl font-semibold uppercase leading-tight max-w-md mb-8">
+              Gia công cắt CNC ceramic, granit
+              <br />
+              đá cầu thang, gạch chân tường
+              <br />
+              gạch mosaic, hoa văn
             </p>
 
             <div className="flex flex-wrap gap-3">
