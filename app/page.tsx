@@ -1,0 +1,26 @@
+import { Header } from "@/components/header"
+import { Hero } from "@/components/hero"
+import { Philosophy } from "@/components/philosophy"
+import { Projects } from "@/components/projects"
+import { Expertise } from "@/components/expertise"
+import { FAQ } from "@/components/faq"
+import { CallToAction } from "@/components/call-to-action"
+import { Footer } from "@/components/footer"
+import { getProjects } from "@/lib/projects"
+
+export default async function Home() {
+  const projectItems = await getProjects()
+
+  return (
+    <main className="min-h-screen">
+      <Header />
+      <Hero />
+      <Philosophy />
+      <Projects projectItems={projectItems} />
+      <Expertise />
+      <FAQ />
+      <CallToAction />
+      <Footer />
+    </main>
+  )
+}

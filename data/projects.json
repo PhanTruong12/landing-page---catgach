@@ -1,0 +1,46 @@
+﻿[
+  {
+    "id": 1,
+    "slug": "tran-thi-li",
+    "title": "Sun Ponte Residence",
+    "summary": "Tổ hợp căn hộ và thương mại ven sông Hàn, gồm The Ponte và The Rio.",
+    "scope": "Gia công, hoàn thiện hạng mục gạch đá theo tiến độ từng phân khu.",
+    "status": "Đang thi công",
+    "category": "Tổ hợp căn hộ - thương mại",
+    "location": "Phía Đông đường Trần Hưng Đạo, quận Sơn Trà, Đà Nẵng",
+    "year": "2024"
+  },
+  {
+    "id": 2,
+    "slug": "unicons",
+    "title": "Unicons",
+    "summary": "Đối tác tổng thầu thi công kết cấu cho khu căn hộ phía Đông đường Trần Hưng Đạo (Sun Ponte Residence).",
+    "scope": "Thi công phần hầm và phần thân theo tiến độ chủ đầu tư.",
+    "status": "Đang thi công",
+    "category": "Đối tác tổng thầu",
+    "location": "Quận Sơn Trà, Đà Nẵng",
+    "year": "2024"
+  },
+  {
+    "id": 3,
+    "slug": "time-square",
+    "title": "Time Square Đà Nẵng",
+    "summary": "Tổ hợp căn hộ, khách sạn và thương mại tại giao lộ Võ Nguyên Giáp - Phạm Văn Đồng.",
+    "scope": "Gia công theo bản vẽ và hoàn thiện theo từng phân khu bàn giao.",
+    "status": "Đang hoàn thiện",
+    "category": "Tổ hợp thương mại - căn hộ - khách sạn",
+    "location": "Quận Sơn Trà, Đà Nẵng",
+    "year": "2026"
+  },
+  {
+    "id": 4,
+    "slug": "fpt-plaza",
+    "title": "FPT Plaza 3",
+    "summary": "Tổ hợp căn hộ thương mại đa tiện ích tại Khu đô thị Công nghệ FPT Đà Nẵng.",
+    "scope": "Gia công theo hồ sơ kỹ thuật và hoàn thiện hạng mục phục vụ bàn giao.",
+    "status": "Đã bàn giao",
+    "category": "Tổ hợp căn hộ thương mại",
+    "location": "Khu đô thị Công nghệ FPT, phường Ngũ Hành Sơn, Đà Nẵng",
+    "year": "2026"
+  }
+]

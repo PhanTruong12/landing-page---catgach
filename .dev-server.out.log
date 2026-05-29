@@ -1,0 +1,16 @@
+
+> my-v0-project@0.1.0 dev
+> next dev
+
+   ▲ Next.js 16.0.10 (Turbopack)
+   - Local:         http://localhost:3001
+   - Network:       http://192.168.1.92:3001
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: 'E:\\Dự án cá nhân\\hously-modern-architecture-studio',
+  testMode: true
+}
+ ✓ Ready in 1085ms
+ GET / 200 in 3.3s (compile: 3.0s, render: 310ms)
+ GET / 200 in 117ms (compile: 8ms, render: 109ms)
