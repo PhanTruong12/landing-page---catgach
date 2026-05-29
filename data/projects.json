@@ -3,44 +3,44 @@
     "id": 1,
     "slug": "tran-thi-li",
     "title": "Sun Ponte Residence",
-    "summary": "Tổ hợp căn hộ và thương mại ven sông Hàn, gồm The Ponte và The Rio.",
-    "scope": "Gia công, hoàn thiện hạng mục gạch đá theo tiến độ từng phân khu.",
-    "status": "Đang thi công",
+    "summary": "Gia công và hoàn thiện hạng mục gạch đá cho công trình Sun Ponte Residence, đảm bảo đúng bản vẽ và tiến độ.",
+    "scope": "Khảo sát thực tế, cắt gia công theo hạng mục và bàn giao theo từng khu vực thi công.",
+    "status": "Đã hoàn thành",
     "category": "Tổ hợp căn hộ - thương mại",
-    "location": "Phía Đông đường Trần Hưng Đạo, quận Sơn Trà, Đà Nẵng",
-    "year": "2024"
+    "location": "Trần Thị Lý, Đà Nẵng",
+    "year": "2026"
   },
   {
     "id": 2,
     "slug": "unicons",
-    "title": "Unicons",
-    "summary": "Đối tác tổng thầu thi công kết cấu cho khu căn hộ phía Đông đường Trần Hưng Đạo (Sun Ponte Residence).",
-    "scope": "Thi công phần hầm và phần thân theo tiến độ chủ đầu tư.",
-    "status": "Đang thi công",
-    "category": "Đối tác tổng thầu",
-    "location": "Quận Sơn Trà, Đà Nẵng",
-    "year": "2024"
+    "title": "Sun Ponte Residence",
+    "summary": "Thi công và hoàn thiện các hạng mục gạch đá tại công trình Unicons theo tiến độ thực tế.",
+    "scope": "Khảo sát, gia công theo bản vẽ và bàn giao theo từng khu vực thi công.",
+    "status": "Đã hoàn thành",
+    "category": "Tổ hợp căn hộ thương mại",
+    "location": "Khu căn hộ phía đông - Đường Trần Hưng Đạo, Sơn Trà, Đà Nẵng",
+    "year": "2025"
   },
   {
     "id": 3,
     "slug": "time-square",
-    "title": "Time Square Đà Nẵng",
-    "summary": "Tổ hợp căn hộ, khách sạn và thương mại tại giao lộ Võ Nguyên Giáp - Phạm Văn Đồng.",
-    "scope": "Gia công theo bản vẽ và hoàn thiện theo từng phân khu bàn giao.",
+    "title": "Đà Nẵng Time Square",
+    "summary": "Thi công hạng mục gạch đá cho tổ hợp căn hộ - khách sạn - thương mại ven biển Mỹ Khê, đối diện Công viên Biển Đông.",
+    "scope": "Gia công theo bản vẽ triển khai, hoàn thiện theo từng phân khu và phối hợp bàn giao theo tiến độ tổng thể dự án.",
     "status": "Đang hoàn thiện",
     "category": "Tổ hợp thương mại - căn hộ - khách sạn",
-    "location": "Quận Sơn Trà, Đà Nẵng",
-    "year": "2026"
+    "location": "Giao lộ Võ Nguyên Giáp - Phạm Văn Đồng, quận Sơn Trà, Đà Nẵng",
+    "year": "2024"
   },
   {
     "id": 4,
     "slug": "fpt-plaza",
-    "title": "FPT Plaza 3",
-    "summary": "Tổ hợp căn hộ thương mại đa tiện ích tại Khu đô thị Công nghệ FPT Đà Nẵng.",
-    "scope": "Gia công theo hồ sơ kỹ thuật và hoàn thiện hạng mục phục vụ bàn giao.",
-    "status": "Đã bàn giao",
+    "title": "FPT-Plaza",
+    "summary": "Tổ chức gia công và giao vật tư theo từng giai đoạn cho dự án FPT-Plaza.",
+    "scope": "Gia công theo hồ sơ kỹ thuật, phân lô đóng gói và giao hàng theo lịch thi công.",
+    "status": "Đã hoàn thành",
     "category": "Tổ hợp căn hộ thương mại",
-    "location": "Khu đô thị Công nghệ FPT, phường Ngũ Hành Sơn, Đà Nẵng",
+    "location": "Đà Nẵng",
     "year": "2026"
   }
 ]
