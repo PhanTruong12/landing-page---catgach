@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Liên hệ đặt cắt gạch bằng cách nào?",
     answer:
-      "Hotline: 0704.599.599. Xưởng: 05 Trần Nam Trung, Hoà Xuân, Cẩm Lệ, Đà Nẵng. Website: catgach.tndgranite.com.",
+      "Hotline: 0704.599.599. Xưởng: 05 Trần Nam Trung, Hoà Xuân, Cẩm Lệ, Đà Nẵng. Website công ty: tndgranite.com.",
   },
 ]
 

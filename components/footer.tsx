@@ -53,8 +53,8 @@ export function Footer() {
                 <span>Xưởng: 05 Trần Nam Trung, Hoà Xuân, Cẩm Lệ, Đà Nẵng</span>
               </li>
               <li>
-                <a href="https://catgach.tndgranite.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
-                  catgach.tndgranite.com
+                <a href="https://tndgranite.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+                  Website công ty: tndgranite.com
                 </a>
               </li>
             </ul>
