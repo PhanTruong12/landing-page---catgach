@@ -9,6 +9,13 @@ import { cn } from "@/lib/utils"
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const navItems = [
+    { label: "Về chúng tôi", href: "#about" },
+    { label: "Dự án", href: "#projects" },
+    { label: "Uy tín", href: "#services" },
+    { label: "Hỏi đáp", href: "#faq" },
+    { label: "Liên hệ", href: "#contact" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,14 +50,8 @@ export function Header() {
           </span>
         </Link>
 
-        <ul className="hidden md:flex items-center gap-10 text-lg tracking-wide">
-          {[
-            { label: "Trang chủ", href: "#hero" },
-            { label: "Về chúng tôi", href: "#about" },
-            { label: "Dự án", href: "#projects" },
-            { label: "Uy tín", href: "#services" },
-            { label: "Hỏi đáp", href: "#faq" },
-          ].map((item) => (
+        <ul className="hidden md:flex items-center gap-8 text-lg tracking-wide">
+          {navItems.map((item) => (
             <li key={item.label}>
               <Link
                 href={item.href}
@@ -61,18 +62,6 @@ export function Header() {
             </li>
           ))}
         </ul>
-
-        <Link
-          href="#contact"
-          className={cn(
-            "hidden md:inline-flex items-center gap-2 text-lg font-semibold px-7 py-3.5 transition-all duration-300",
-            scrolled
-              ? "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white"
-              : "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white",
-          )}
-        >
-          Liên hệ ngay
-        </Link>
 
         <button
           className="md:hidden z-50 transition-colors duration-300 text-white"
@@ -101,17 +90,11 @@ export function Header() {
       >
         <div className="container mx-auto px-6">
           <ul className="flex flex-col gap-6 mb-8">
-            {[
-              { label: "Trang chủ", href: "#hero" },
-              { label: "Về chúng tôi", href: "#about" },
-              { label: "Dự án", href: "#projects" },
-              { label: "Uy tín", href: "#services" },
-              { label: "Hỏi đáp", href: "#faq" },
-            ].map((item) => (
+            {navItems.map((item) => (
               <li key={item.label}>
                 <Link
                   href={item.href}
-                  className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-4xl font-normal drop-shadow-[0_2px_10px_rgba(0,0,0,0.75)] block"
+                  className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-3xl font-normal drop-shadow-[0_2px_10px_rgba(0,0,0,0.75)] block"
                   onClick={closeMobileMenu}
                 >
                   {item.label}
@@ -119,14 +102,6 @@ export function Header() {
               </li>
             ))}
           </ul>
-
-          <Link
-            href="#contact"
-            className="inline-flex items-center justify-center gap-2 text-base font-medium px-6 py-3 bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white transition-all duration-300 mb-4"
-            onClick={closeMobileMenu}
-          >
-            Liên hệ ngay
-          </Link>
         </div>
       </div>
     </header>

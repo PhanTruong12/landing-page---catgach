@@ -8,18 +8,18 @@
     "status": "Đã hoàn thành",
     "category": "Tổ hợp căn hộ - thương mại",
     "location": "Trần Thị Lý, Đà Nẵng",
-    "year": "2026"
+    "year": "2025"
   },
   {
     "id": 2,
-    "slug": "unicons",
-    "title": "Sun Ponte Residence",
-    "summary": "Thi công và hoàn thiện các hạng mục gạch đá tại công trình Unicons theo tiến độ thực tế.",
+    "slug": "hoi-an",
+    "title": "Công trình ở Hội An",
+    "summary": "Thi công và hoàn thiện các hạng mục gạch đá tại công trình Hội An theo tiến độ thực tế.",
     "scope": "Khảo sát, gia công theo bản vẽ và bàn giao theo từng khu vực thi công.",
     "status": "Đã hoàn thành",
-    "category": "Tổ hợp căn hộ thương mại",
-    "location": "Khu căn hộ phía đông - Đường Trần Hưng Đạo, Sơn Trà, Đà Nẵng",
-    "year": "2025"
+    "category": "Công trình dân dụng",
+    "location": "Đường Mai Thúc Loan, Hội An, Quảng Nam",
+    "year": "2026"
   },
   {
     "id": 3,
@@ -41,6 +41,6 @@
     "status": "Đã hoàn thành",
     "category": "Tổ hợp căn hộ thương mại",
     "location": "Đà Nẵng",
-    "year": "2026"
+    "year": "2025"
   }
 ]

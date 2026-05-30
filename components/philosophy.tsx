@@ -97,12 +97,14 @@ export function Philosophy() {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <article className="border border-border rounded-md overflow-hidden bg-background/70">
-                  <div className="aspect-[4/3] bg-muted/30">
+                  <div className="h-52 md:h-56 bg-muted/30">
                     <img src={activity.image} alt={activity.title} className="w-full h-full object-cover" />
                   </div>
                   <div className="p-5">
-                    <h3 className="text-xl font-medium mb-2">{activity.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">{activity.description}</p>
+                    <h3 className="text-xl font-medium mb-2 min-h-[32px]">{activity.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm min-h-[78px] overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                      {activity.description}
+                    </p>
                   </div>
                 </article>
               </div>

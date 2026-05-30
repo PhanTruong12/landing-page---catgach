@@ -1,7 +1,6 @@
 ﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ArrowDown } from "lucide-react"
 
 export function Hero() {
   const contentRef = useRef<HTMLDivElement>(null)
@@ -127,10 +126,11 @@ export function Hero() {
           className="w-full h-full object-cover object-center"
         />
       </div>
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-black/42 to-black/24" />
 
       <div
         ref={contentRef}
-        className="container mx-auto px-6 md:px-12 lg:pt-0 relative z-10 pb-0 pl-1 pr-1 pt-8 md:pt-0"
+        className="container mx-auto max-w-[1150px] px-4 md:px-8 lg:px-12 lg:pt-0 relative z-10 pb-0 pt-8 md:pt-0"
         style={{
           willChange: "transform",
           transform: "translateY(0px)",
@@ -138,16 +138,14 @@ export function Hero() {
           transformStyle: "preserve-3d",
         }}
       >
-        <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Dịch vụ cắt gạch tại Đà Nẵng"}</p>
-
+        <div className="mb-56 md:mb-52 lg:mb-64">
           <h1
             ref={titleRef}
-            className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
+            className="text-center text-balance mb-0 text-white font-semibold tracking-[-0.015em] leading-[1.02] text-[clamp(2.8rem,10vw,7.2rem)] [text-shadow:0_6px_22px_rgba(0,0,0,0.45)]"
           >
             {"Gia công gạch"}
             <br />
-            <span className="text-orange-200">{"Trần Nam Trung"}</span>
+            <span className="block mt-1 md:mt-2 text-[#f1d6ac]">{"Trần Nam Trung"}</span>
           </h1>
         </div>
       </div>
@@ -159,12 +157,6 @@ export function Hero() {
           className="w-full h-full object-cover object-center"
         />
       </div>
-
-      {animationComplete && (
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce z-30">
-          <ArrowDown className="w-5 h-5 text-muted-foreground" />
-        </div>
-      )}
     </section>
   )
 }
