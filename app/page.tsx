@@ -15,8 +15,8 @@ export default async function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <Philosophy />
       <Projects projectItems={projectItems} />
+      <Philosophy />
       <Expertise />
       <FAQ />
       <CallToAction />

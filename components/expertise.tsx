@@ -1,11 +1,13 @@
 ﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
-import { BadgeCheck, Clock3, Gem, Handshake, Layers, ShieldCheck } from "lucide-react"
+import { BadgeCheck, Clock3, Gem, Layers } from "lucide-react"
 import { HighlightedText } from "./highlighted-text"
 
+const keyPartners = "Sun Ponte Residence và Đà Nẵng Time Square"
+
 const trustStats = [
-  { value: "Kinh nghiệm thực chiến", label: "Gia công gạch đá cho nhà phố, biệt thự và công trình thương mại." },
+  { value: "Độ tin cậy cao", label: `Được các nhà thầu lớn tại ${keyPartners} tin tưởng hợp tác.` },
   { value: "Quy trình rõ ràng", label: "Tiếp nhận bản vẽ, gia công, đóng gói và giao hàng theo từng hạng mục." },
   { value: "Chất lượng ổn định", label: "Đường cắt granite, ceramic và đá tự nhiên đúng quy cách thi công." },
   { value: "Tiến độ cam kết", label: "Bàn giao đúng lịch để công trình tại Đà Nẵng luôn chủ động kế hoạch." },
@@ -13,34 +15,25 @@ const trustStats = [
 
 const trustHighlights = [
   {
-    title: "Kinh nghiệm lâu năm",
-    description: "Đội ngũ giàu kinh nghiệm trong gia công gạch đá dân dụng và công trình thương mại.",
+    title: "Nhiều năm kinh nghiệm",
+    description:
+      `Đội ngũ giàu kinh nghiệm trong gia công gạch đá dân dụng và công trình thương mại, đồng hành cùng các nhà thầu lớn tại ${keyPartners}.`,
     icon: BadgeCheck,
   },
   {
     title: "Quy trình chuyên nghiệp",
-    description: "Từ tiếp nhận bản vẽ, gia công, đóng gói đến giao hàng đều có quy chuẩn rõ ràng.",
+    description: "Từ tiếp nhận bản vẽ, gia công, đóng gói đến giao hàng đều có quy chuẩn rõ ràng, hạn chế phát sinh khi thi công.",
     icon: Layers,
   },
   {
     title: "Sản phẩm chất lượng",
-    description: "Đường cắt sắc gọn, đúng kích thước và đồng đều giữa các lô hàng bàn giao.",
+    description: "Đường cắt sắc gọn, đúng kích thước và đồng đều giữa các lô hàng bàn giao, đáp ứng tốt yêu cầu kỹ thuật.",
     icon: Gem,
   },
   {
     title: "Giao hàng đúng hẹn",
-    description: "Theo dõi tiến độ giao theo từng hạng mục để công trình luôn chủ động lịch thi công.",
+    description: "Theo dõi tiến độ giao theo từng hạng mục để công trình luôn chủ động lịch thi công và bám sát kế hoạch tổng thể.",
     icon: Clock3,
-  },
-  {
-    title: "Giá cả minh bạch",
-    description: "Báo giá rõ ràng theo khối lượng và hạng mục, hạn chế phát sinh không cần thiết.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "Được khách hàng tin tưởng",
-    description: "Nhiều chủ nhà, đội thi công và đơn vị nội thất lựa chọn hợp tác lâu dài.",
-    icon: Handshake,
   },
 ]
 
