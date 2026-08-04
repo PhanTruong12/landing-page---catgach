@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "slug": "tran-thi-li",
@@ -42,5 +42,27 @@
     "category": "Tổ hợp căn hộ thương mại",
     "location": "Đà Nẵng",
     "year": "2025"
+  },
+  {
+    "id": 5,
+    "slug": "garrya",
+    "title": "Khách sạn Garrya Đà Nẵng",
+    "summary": "Gia công và cung cấp hạng mục gạch đá granite cho dự án khách sạn boutique cao cấp Garrya Đà Nẵng, thuộc tập đoàn Banyan Group.",
+    "scope": "Gia công theo bản vẽ triển khai, đóng gói và vận chuyển giao hàng trực tiếp tại công trường.",
+    "status": "Đang thi công",
+    "category": "Khách sạn cao cấp",
+    "location": "Lê Quang Đạo, Ngũ Hành Sơn, Đà Nẵng",
+    "year": "2026"
+  },
+  {
+    "id": 6,
+    "slug": "alliance",
+    "title": "Đối tác Alliance",
+    "summary": "Cung cấp và gia công gạch đá cho các hạng mục hoàn thiện nội thất cao cấp, phối hợp cùng đơn vị thi công Alliance.",
+    "scope": "Gia công theo bản vẽ chi tiết, đóng gói và bàn giao theo tiến độ từng hạng mục nội thất.",
+    "status": "Đang thi công",
+    "category": "Nội thất cao cấp",
+    "location": "Đà Nẵng",
+    "year": "2026"
   }
 ]
